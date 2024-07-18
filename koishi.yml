@@ -1,11 +1,13 @@
 plugins:
   group:server:
+    $collapsed: true
     server:bsfica:
       port: 5140
       maxPort: 5149
     ~server-satori:0yvku6: {}
     ~server-temp:3dnvwd: {}
   group:basic:
+    $collapsed: true
     ~admin:3nltkt: {}
     ~bind:iyk9ts: {}
     commands:omi025: {}
@@ -13,11 +15,13 @@ plugins:
     http:q00hnx: {}
     ~inspect:uo7q37: {}
     locales:ae1yed: {}
-    proxy-agent:8gb3yc: {}
+    proxy-agent:8gb3yc:
+      proxyAgent: http://127.0.0.1:7890
     rate-limit:z6ew2c: {}
     telemetry:4ijnks:
       mode: readonly
   group:console:
+    $collapsed: true
     actions:4ebjry: {}
     analytics:anovcc: {}
     android:qa5dll:
@@ -41,6 +45,7 @@ plugins:
     status:o9qkno: {}
     theme-vanilla:24hprq: {}
   group:storage:
+    $collapsed: true
     ~database-mongo:1e7wc8:
       database: koishi
     ~database-mysql:b6cve7:
@@ -66,7 +71,14 @@ plugins:
     ~adapter-wecom:7ofprr: {}
     ~adapter-whatsapp:ep03is: {}
     ~adapter-zulip:szhsm9: {}
+    adapter-onebot:otllqs:
+      selfId: '3985280752'
   group:develop:
+    $collapsed: true
     $if: env.NODE_ENV === 'development'
     hmr:qzq57w:
       root: .
+  group:klqzyr:
+    $label: asuna
+    ~@asuna/bili-dyn-sub:8580ue: {}
+    '@asuna/bili-parser:u00onn': {}

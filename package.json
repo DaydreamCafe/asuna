@@ -83,6 +83,7 @@
     "@koishijs/plugin-server-temp": "^1.4.0",
     "@koishijs/plugin-status": "^7.4.10",
     "koishi": "^4.17.9",
+    "koishi-plugin-adapter-onebot": "6.5.9",
     "koishi-plugin-android": "^0.0.1",
     "koishi-plugin-assets-local": "^3.3.2",
     "koishi-plugin-dataview": "^2.6.1",
