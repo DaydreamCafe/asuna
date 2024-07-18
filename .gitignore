@@ -3,8 +3,6 @@ dist
 /cache
 /data
 /temp
-/external/*
-!/external/.placeholder
 
 .env.local
 

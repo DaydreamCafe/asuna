@@ -1,0 +1,3 @@
+[submodule "external/bili-dyn-sub"]
+	path = external/bili-dyn-sub
+	url = https://github.com/WhitePaper233/asuna-plugin-bili-dyn-sub.git
