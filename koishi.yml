@@ -56,6 +56,7 @@ plugins:
       path: data/koishi.db
     assets-local:4l2g4d: {}
   group:adapter:
+    $collapsed: true
     ~adapter-dingtalk:xi1ccb: {}
     ~adapter-discord:ch8ml0: {}
     ~adapter-kook:v2jc2w: {}
@@ -82,3 +83,5 @@ plugins:
     $label: asuna
     ~@asuna/bili-dyn-sub:8580ue: {}
     '@asuna/bili-parser:u00onn': {}
+    '@asuna/ahsai:5uvmoa': {}
+    '@asuna/otto-synth:mpr9v5': {}

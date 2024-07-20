@@ -32,6 +32,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@asuna/koishi-plugin-ahsai@workspace:external/ahsai":
+  version: 0.0.0-use.local
+  resolution: "@asuna/koishi-plugin-ahsai@workspace:external/ahsai"
+  dependencies:
+    "@types/wav-encoder": "npm:^1"
+    audio-decode: "npm:^2.2.0"
+    wav-encoder: "npm:^1.3.0"
+  peerDependencies:
+    koishi: ^4.17.9
+  languageName: unknown
+  linkType: soft
+
 "@asuna/koishi-plugin-bili-dyn-sub@workspace:external/bili-dyn-sub":
   version: 0.0.0-use.local
   resolution: "@asuna/koishi-plugin-bili-dyn-sub@workspace:external/bili-dyn-sub"
@@ -43,6 +55,14 @@ __metadata:
 "@asuna/koishi-plugin-bili-parser@workspace:external/bili-parser":
   version: 0.0.0-use.local
   resolution: "@asuna/koishi-plugin-bili-parser@workspace:external/bili-parser"
+  peerDependencies:
+    koishi: ^4.17.9
+  languageName: unknown
+  linkType: soft
+
+"@asuna/koishi-plugin-otto-synth@workspace:external/otto-synth":
+  version: 0.0.0-use.local
+  resolution: "@asuna/koishi-plugin-otto-synth@workspace:external/otto-synth"
   peerDependencies:
     koishi: ^4.17.9
   languageName: unknown
@@ -876,6 +896,13 @@ __metadata:
   version: 0.21.5
   resolution: "@esbuild/win32-x64@npm:0.21.5"
   conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@eshaz/web-worker@npm:1.2.2":
+  version: 1.2.2
+  resolution: "@eshaz/web-worker@npm:1.2.2"
+  checksum: 10c0/4f1ad8287587d294af3c9dabfa88f7ffea54b958cf89ee50d928406436f10b7c4d733bf47e6566a57988c24f3773144fc1ba540dc4a7dd8031e6abb85ba76ba2
   languageName: node
   linkType: hard
 
@@ -1814,6 +1841,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@thi.ng/bitstream@npm:^2.2.12":
+  version: 2.2.64
+  resolution: "@thi.ng/bitstream@npm:2.2.64"
+  dependencies:
+    "@thi.ng/errors": "npm:^2.5.11"
+  checksum: 10c0/990e6e16fcb5cb5ab1d781e9ca9da5d86c1d300797dd2db60f409f11eedd416991c88fa8b011f8c906cbeb447ceed12feb48a445cd5373cda987311b4c5854fc
+  languageName: node
+  linkType: hard
+
+"@thi.ng/errors@npm:^2.5.11":
+  version: 2.5.11
+  resolution: "@thi.ng/errors@npm:2.5.11"
+  checksum: 10c0/4f271a57e68cda536a33020aeaf343c0f2378a3ed83d0c2aaf05abe1371991c161450dd23c5d949ee228a88d3644c646d9d00e1adb684dfcb2a3ad116108458f
+  languageName: node
+  linkType: hard
+
 "@tokenizer/token@npm:^0.3.0":
   version: 0.3.0
   resolution: "@tokenizer/token@npm:0.3.0"
@@ -2061,6 +2104,13 @@ __metadata:
     "@types/node": "npm:*"
     "@types/send": "npm:*"
   checksum: 10c0/26ec864d3a626ea627f8b09c122b623499d2221bbf2f470127f4c9ebfe92bd8a6bb5157001372d4c4bd0dd37a1691620217d9dc4df5aa8f779f3fd996b1c60ae
+  languageName: node
+  linkType: hard
+
+"@types/wav-encoder@npm:^1":
+  version: 1.3.3
+  resolution: "@types/wav-encoder@npm:1.3.3"
+  checksum: 10c0/b93e6e91b546f5d42f17dc2dae4270637d0ef81a498dc7e36a2797e4a111f5ca8e0577bdcff53d62a2d409621ef231f15f76e59a812ba6b3b4ae176215728c51
   languageName: node
   linkType: hard
 
@@ -2540,6 +2590,45 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@wasm-audio-decoders/common@npm:9.0.4":
+  version: 9.0.4
+  resolution: "@wasm-audio-decoders/common@npm:9.0.4"
+  dependencies:
+    "@eshaz/web-worker": "npm:1.2.2"
+  checksum: 10c0/7226f584c60c383709d1aae56b732453b33276050c6e2c6da1fb14a7ece3e8d5687beaa6a97f9cdf9fa2959db0315cec7910c694266530c6f39922e376552391
+  languageName: node
+  linkType: hard
+
+"@wasm-audio-decoders/common@npm:9.0.5":
+  version: 9.0.5
+  resolution: "@wasm-audio-decoders/common@npm:9.0.5"
+  dependencies:
+    "@eshaz/web-worker": "npm:1.2.2"
+    simple-yenc: "npm:^1.0.4"
+  checksum: 10c0/59e72231bee7ba5f01fd4f812b626248a1772b5a0fa1e602bbeb66745ee7618209ee9d35e93fb4c1ac586cde6bf00aeb6c5adcb69db9644dc82fd6673c808f52
+  languageName: node
+  linkType: hard
+
+"@wasm-audio-decoders/flac@npm:^0.2.1":
+  version: 0.2.4
+  resolution: "@wasm-audio-decoders/flac@npm:0.2.4"
+  dependencies:
+    "@wasm-audio-decoders/common": "npm:9.0.5"
+    codec-parser: "npm:2.4.3"
+  checksum: 10c0/7f2f4a5312320806c8206a34ea65448f98cce5198dfc7fc2cd111446542ca96aab460bd3bb434edc06cbae287b22d1240f308733f2d00dd4692874a5f1f8418a
+  languageName: node
+  linkType: hard
+
+"@wasm-audio-decoders/ogg-vorbis@npm:^0.1.12":
+  version: 0.1.15
+  resolution: "@wasm-audio-decoders/ogg-vorbis@npm:0.1.15"
+  dependencies:
+    "@wasm-audio-decoders/common": "npm:9.0.5"
+    codec-parser: "npm:2.4.3"
+  checksum: 10c0/9a515c918ea6cc3fc3beaad4526525b33df22d1d2abb49fcd51a5f79b56cc7eb10fb8310e3b4f7771f360560d68ff6c67559a93479dc022d5497a8d0a91ada7a
+  languageName: node
+  linkType: hard
+
 "abbrev@npm:^2.0.0":
   version: 2.0.0
   resolution: "abbrev@npm:2.0.0"
@@ -2744,6 +2833,36 @@ __metadata:
   bin:
     atsc: lib/bin.js
   checksum: 10c0/d900ea00a4036faf1a41415e2e00d0ea52a3d1fdccb6038afa498bedc4aecb4a81a774f7fe53adbdedb798e86f1a659c0391f0c842c0150ec837fe795b8b76ec
+  languageName: node
+  linkType: hard
+
+"audio-buffer@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "audio-buffer@npm:5.0.0"
+  checksum: 10c0/d50caeacc39da7bc37be7dd4261844af406032a54986c0d80ced8e1299a5ec8d9ae9beb4be4e203bcd31d68a04305cb2d57ef2e98a8512fc418262429c4d5b2e
+  languageName: node
+  linkType: hard
+
+"audio-decode@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "audio-decode@npm:2.2.0"
+  dependencies:
+    "@wasm-audio-decoders/flac": "npm:^0.2.1"
+    "@wasm-audio-decoders/ogg-vorbis": "npm:^0.1.12"
+    audio-buffer: "npm:^5.0.0"
+    audio-type: "npm:^2.2.1"
+    mpg123-decoder: "npm:^0.4.10"
+    node-wav: "npm:^0.0.2"
+    ogg-opus-decoder: "npm:^1.6.8"
+    qoa-format: "npm:^1.0.1"
+  checksum: 10c0/59be14f559a7310cd0d052fda31f768c9bf85011d4dcf5186cb1480afaf97b3b8a888a5a507e053029f881cbd3433de869d36418c42e1264e75017a3f0017c16
+  languageName: node
+  linkType: hard
+
+"audio-type@npm:^2.2.1":
+  version: 2.2.1
+  resolution: "audio-type@npm:2.2.1"
+  checksum: 10c0/5d35180dadd64ad499361ea41f02714c7fb01f96f4e499f7de6801de318f5150f267c171e25373a571d32aa56df135042b7cc6596290ea67b82b220c94c72e09
   languageName: node
   linkType: hard
 
@@ -3081,6 +3200,13 @@ __metadata:
   version: 4.6.0
   resolution: "co@npm:4.6.0"
   checksum: 10c0/c0e85ea0ca8bf0a50cbdca82efc5af0301240ca88ebe3644a6ffb8ffe911f34d40f8fbcf8f1d52c5ddd66706abd4d3bfcd64259f1e8e2371d4f47573b0dc8c28
+  languageName: node
+  linkType: hard
+
+"codec-parser@npm:2.4.3":
+  version: 2.4.3
+  resolution: "codec-parser@npm:2.4.3"
+  checksum: 10c0/298cb8ab65010dd720dab5a7acf77947574c897510f0a8d177695a9821f1f3e460bb27e13a0886dd72ad7d56eddd6e4434b765853f58aed3eb5cab1b42511669
   languageName: node
   linkType: hard
 
@@ -5139,6 +5265,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mpg123-decoder@npm:^0.4.10":
+  version: 0.4.12
+  resolution: "mpg123-decoder@npm:0.4.12"
+  dependencies:
+    "@wasm-audio-decoders/common": "npm:9.0.4"
+  checksum: 10c0/5863e893716c570503a2e037359313dab3ce40cd696ec47d371466037e528a6b080dc0a2554cd115f71a16a3dd19d3ab14aa73da247295b6ee311b3acb9c2c06
+  languageName: node
+  linkType: hard
+
 "mrmime@npm:^2.0.0":
   version: 2.0.0
   resolution: "mrmime@npm:2.0.0"
@@ -5210,6 +5345,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"node-wav@npm:^0.0.2":
+  version: 0.0.2
+  resolution: "node-wav@npm:0.0.2"
+  checksum: 10c0/58be3f0c735d0c4c1ca14da011bd06fd6a43847542e3d82ffa2230a48c69875b5f4af33656271ba1729742e254a492a4a7cb87d94b537157878541cc0446e53f
+  languageName: node
+  linkType: hard
+
 "nopt@npm:^7.0.0":
   version: 7.2.1
   resolution: "nopt@npm:7.2.1"
@@ -5269,6 +5411,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ogg-opus-decoder@npm:^1.6.8":
+  version: 1.6.12
+  resolution: "ogg-opus-decoder@npm:1.6.12"
+  dependencies:
+    "@wasm-audio-decoders/common": "npm:9.0.5"
+    codec-parser: "npm:2.4.3"
+    opus-decoder: "npm:0.7.6"
+  checksum: 10c0/8f5d089d1e8178a73c3c72846058bd2b5859525cff2c999ff3a8fb9dfb6bda5c17ed872f98282ed62246511d7460da16b1a4d701414c4302b3161c1cf3280f13
+  languageName: node
+  linkType: hard
+
 "on-finished@npm:^2.3.0":
   version: 2.4.1
   resolution: "on-finished@npm:2.4.1"
@@ -5311,6 +5464,15 @@ __metadata:
     is-docker: "npm:^2.1.1"
     is-wsl: "npm:^2.2.0"
   checksum: 10c0/bb6b3a58401dacdb0aad14360626faf3fb7fba4b77816b373495988b724fb48941cad80c1b65d62bb31a17609b2cd91c41a181602caea597ca80dfbcc27e84c9
+  languageName: node
+  linkType: hard
+
+"opus-decoder@npm:0.7.6":
+  version: 0.7.6
+  resolution: "opus-decoder@npm:0.7.6"
+  dependencies:
+    "@wasm-audio-decoders/common": "npm:9.0.5"
+  checksum: 10c0/cb50645caa0081f2a7622c65d3a03bc8fc2b09419272b18beaa59b468d87679402a88f442ccb3714186b69a0cb06b206f9ad80742b5c6afb3856b0e49d9eb2bb
   languageName: node
   linkType: hard
 
@@ -5594,6 +5756,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"qoa-format@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "qoa-format@npm:1.0.1"
+  dependencies:
+    "@thi.ng/bitstream": "npm:^2.2.12"
+  checksum: 10c0/83f67372b713efcf9a59178516b61030b7adeffacd318f48e9f24c48490b89194265088644b89ebeab5f6e6ebbb07c168575dc99b5a268cfdd9e491db6add470
+  languageName: node
+  linkType: hard
+
 "qs@npm:^6.11.0, qs@npm:^6.5.2":
   version: 6.12.3
   resolution: "qs@npm:6.12.3"
@@ -5857,6 +6028,13 @@ __metadata:
   version: 4.1.0
   resolution: "signal-exit@npm:4.1.0"
   checksum: 10c0/41602dce540e46d599edba9d9860193398d135f7ff72cab629db5171516cfae628d21e7bfccde1bbfdf11c48726bc2a6d1a8fb8701125852fbfda7cf19c6aa83
+  languageName: node
+  linkType: hard
+
+"simple-yenc@npm:^1.0.4":
+  version: 1.0.4
+  resolution: "simple-yenc@npm:1.0.4"
+  checksum: 10c0/5a476cf328e5e5b6006ac44af01daeda8a9832d3d2205c80d71fbdf3a9ff1ee5092ed41b909c77532c80b9f6db65b577e2c1283fcbb5a9b194f1e96b0077de73
   languageName: node
   linkType: hard
 
@@ -6497,6 +6675,13 @@ __metadata:
     typescript:
       optional: true
   checksum: 10c0/be8587db15e20acf8805900db32faa978fa58c45fc2cc498c0f1d1520e50e6f04c6cf531c1a45fbc94c2336009f84b20499f430723b275db5f066abe795399f7
+  languageName: node
+  linkType: hard
+
+"wav-encoder@npm:^1.3.0":
+  version: 1.3.0
+  resolution: "wav-encoder@npm:1.3.0"
+  checksum: 10c0/b50aaa6e4d9ccbccfa0f6ecbf97fc07cc2b6208b4e45937742351c744fad8bb23e9a5833d91863a04201b1e0700d6be9bfae4e6ccc9c6d7032fb0595cec4773f
   languageName: node
   linkType: hard
 

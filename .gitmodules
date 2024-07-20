@@ -4,3 +4,9 @@
 [submodule "external/bili-parser"]
 	path = external/bili-parser
 	url = https://github.com/WhitePaper233/asuna-plugin-bili-parser.git
+[submodule "external/otto-synth"]
+	path = external/otto-synth
+	url = https://github.com/WhitePaper233/asuna-plugin-otto-synth.git
+[submodule "external/ahsai"]
+	path = external/ahsai
+	url = https://github.com/WhitePaper233/asuna-plugin-ahsai.git
