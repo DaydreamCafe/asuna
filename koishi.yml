@@ -16,7 +16,8 @@ plugins:
     ~inspect:uo7q37: {}
     locales:ae1yed: {}
     proxy-agent:8gb3yc:
-      proxyAgent: http://127.0.0.1:7890
+      $if: env.PROXY_AGENT
+      proxyAgent: ${{ env.PROXY_AGENT }}
     rate-limit:z6ew2c: {}
     telemetry:4ijnks:
       mode: readonly
@@ -73,7 +74,8 @@ plugins:
     ~adapter-whatsapp:ep03is: {}
     ~adapter-zulip:szhsm9: {}
     adapter-onebot:otllqs:
-      selfId: '3985280752'
+      $if: env.SELF_ID
+      selfId: ${{ env.SELF_ID }}
   group:develop:
     $collapsed: true
     $if: env.NODE_ENV === 'development'
@@ -85,3 +87,5 @@ plugins:
     '@asuna/bili-parser:u00onn': {}
     '@asuna/ahsai:5uvmoa': {}
     '@asuna/otto-synth:mpr9v5': {}
+    '@asuna/daily-news:3npls0': {}
+    '@asuna/github-parser:xe8wb5': {}

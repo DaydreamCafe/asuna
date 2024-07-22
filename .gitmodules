@@ -10,3 +10,9 @@
 [submodule "external/ahsai"]
 	path = external/ahsai
 	url = https://github.com/WhitePaper233/asuna-plugin-ahsai.git
+[submodule "external/github-parser"]
+	path = external/github-parser
+	url = https://github.com/WhitePaper233/asuna-plugin-github-parser.git
+[submodule "external/daily-news"]
+	path = external/daily-news
+	url = https://github.com/WhitePaper233/asuna-plugin-daily-news.git

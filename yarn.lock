@@ -60,6 +60,22 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@asuna/koishi-plugin-daily-news@workspace:external/daily-news":
+  version: 0.0.0-use.local
+  resolution: "@asuna/koishi-plugin-daily-news@workspace:external/daily-news"
+  peerDependencies:
+    koishi: ^4.17.9
+  languageName: unknown
+  linkType: soft
+
+"@asuna/koishi-plugin-github-parser@workspace:external/github-parser":
+  version: 0.0.0-use.local
+  resolution: "@asuna/koishi-plugin-github-parser@workspace:external/github-parser"
+  peerDependencies:
+    koishi: ^4.17.9
+  languageName: unknown
+  linkType: soft
+
 "@asuna/koishi-plugin-otto-synth@workspace:external/otto-synth":
   version: 0.0.0-use.local
   resolution: "@asuna/koishi-plugin-otto-synth@workspace:external/otto-synth"
