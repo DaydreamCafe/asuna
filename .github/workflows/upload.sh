@@ -10,4 +10,4 @@ echo upload_file: $upload_file
 
 mv "$RUNNER_TEMP/bundle.zip" "$upload_file"
 
-gh release upload "$tag_name" "$upload_file"
+gh release upload $tag_name "$upload_file"
