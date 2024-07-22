@@ -19,11 +19,11 @@ for file in $(cat package.json | jq -r '.files' | sed '1d' | sed '$d'); do
 done
 
 for file in $(find . -type f,l | git check-ignore --stdin --no-index); do
-  dir=$(dirname $RUNNER_TEMP/bundle/$file)
+  dir=$(dirname "$RUNNER_TEMP/bundle/$file")
   mkdir -p $dir
   cp -a $file $dir
 done
 
-cd $RUNNER_TEMP/bundle
+cd "$RUNNER_TEMP/bundle"
 
 zip $([[ $OSTYPE = "msys" ]] && echo "-9qr" || echo "-9qry") ../bundle.zip $(ls -A)
