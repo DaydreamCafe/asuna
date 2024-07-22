@@ -83,9 +83,9 @@ plugins:
       root: .
   group:klqzyr:
     $label: asuna
-    ~@asuna/bili-dyn-sub:8580ue: {}
-    '@asuna/bili-parser:u00onn': {}
-    '@asuna/ahsai:5uvmoa': {}
-    '@asuna/otto-synth:mpr9v5': {}
-    '@asuna/daily-news:3npls0': {}
-    '@asuna/github-parser:xe8wb5': {}
+    ~@asuna-bot/bili-dyn-sub:8580ue: {}
+    '@asuna-bot/bili-parser:u00onn': {}
+    '@asuna-bot/ahsai:5uvmoa': {}
+    '@asuna-bot/otto-synth:mpr9v5': {}
+    '@asuna-bot/daily-news:3npls0': {}
+    '@asuna-bot/github-parser:xe8wb5': {}
