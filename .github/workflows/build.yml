@@ -78,7 +78,7 @@ jobs:
           bash .github/workflows/upload.sh
           '${{ matrix.target.platform }}-${{ steps.vars.outputs.ARCH }}-node${{ steps.vars.outputs.NODE_VERSION }}'
         env:
-          GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
+          GH_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
 
   docker:
     runs-on: ubuntu-latest
@@ -91,6 +91,6 @@ jobs:
       - name: Trigger docker build
         env:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-          GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
+          GH_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
         if: ${{ env.DOCKER_USERNAME != null }}
         run: gh workflow run Docker
