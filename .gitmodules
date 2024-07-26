@@ -16,3 +16,6 @@
 [submodule "external/daily-news"]
 	path = external/daily-news
 	url = https://github.com/WhitePaper233/asuna-plugin-daily-news.git
+[submodule "external/bangumi-calendar"]
+	path = external/bangumi-calendar
+	url = https://github.com/WhitePaper233/asuna-plugin-bangumi-calendar.git

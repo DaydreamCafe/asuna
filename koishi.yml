@@ -82,6 +82,7 @@ plugins:
     hmr:qzq57w:
       root: .
   group:klqzyr:
+    html-renderer:q2tlhz: {}
     $label: asuna
     ~@asuna-bot/bili-dyn-sub:8580ue: {}
     '@asuna-bot/bili-parser:u00onn': {}
@@ -89,3 +90,4 @@ plugins:
     '@asuna-bot/otto-synth:mpr9v5': {}
     '@asuna-bot/daily-news:3npls0': {}
     '@asuna-bot/github-parser:xe8wb5': {}
+    '@asuna-bot/bangumi-calendar:e4w8bl': {}

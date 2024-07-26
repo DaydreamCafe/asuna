@@ -44,6 +44,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@asuna-bot/koishi-plugin-bangumi-calendar@workspace:external/bangumi-calendar":
+  version: 0.0.0-use.local
+  resolution: "@asuna-bot/koishi-plugin-bangumi-calendar@workspace:external/bangumi-calendar"
+  peerDependencies:
+    koishi: ^4.17.9
+  languageName: unknown
+  linkType: soft
+
 "@asuna-bot/koishi-plugin-bili-dyn-sub@workspace:external/bili-dyn-sub":
   version: 0.0.0-use.local
   resolution: "@asuna-bot/koishi-plugin-bili-dyn-sub@workspace:external/bili-dyn-sub"
@@ -71,6 +79,14 @@ __metadata:
 "@asuna-bot/koishi-plugin-github-parser@workspace:external/github-parser":
   version: 0.0.0-use.local
   resolution: "@asuna-bot/koishi-plugin-github-parser@workspace:external/github-parser"
+  peerDependencies:
+    koishi: ^4.17.9
+  languageName: unknown
+  linkType: soft
+
+"@asuna-bot/koishi-plugin-lolimi@workspace:external/lolimi":
+  version: 0.0.0-use.local
+  resolution: "@asuna-bot/koishi-plugin-lolimi@workspace:external/lolimi"
   peerDependencies:
     koishi: ^4.17.9
   languageName: unknown
@@ -2817,6 +2833,7 @@ __metadata:
     koishi-plugin-assets-local: "npm:^3.3.2"
     koishi-plugin-dataview: "npm:^2.6.1"
     koishi-plugin-desktop: "npm:^1.0.0"
+    koishi-plugin-html-renderer: "npm:1.0.0"
     koishi-plugin-puppeteer: "npm:^3.8.4"
     koishi-plugin-rate-limit: "npm:^2.0.4"
     koishi-plugin-telemetry: "npm:^0.2.3"
@@ -2834,6 +2851,13 @@ __metadata:
   version: 4.2.5
   resolution: "async-validator@npm:4.2.5"
   checksum: 10c0/0ec09ee388aae5f6b037a320049a369b681ca9b341b28e2693e50e89b5c4c64c057a2c57f9fc1c18dd020823809d8af4b72b278e0a7a872c9e3accd5c4c3ce3a
+  languageName: node
+  linkType: hard
+
+"async@npm:^3.2.3":
+  version: 3.2.5
+  resolution: "async@npm:3.2.5"
+  checksum: 10c0/1408287b26c6db67d45cb346e34892cee555b8b59e6c68e6f8c3e495cad5ca13b4f218180e871f3c2ca30df4ab52693b66f2f6ff43644760cab0b2198bda79c1
   languageName: node
   linkType: hard
 
@@ -2971,6 +2995,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"brace-expansion@npm:^1.1.7":
+  version: 1.1.11
+  resolution: "brace-expansion@npm:1.1.11"
+  dependencies:
+    balanced-match: "npm:^1.0.0"
+    concat-map: "npm:0.0.1"
+  checksum: 10c0/695a56cd058096a7cb71fb09d9d6a7070113c7be516699ed361317aca2ec169f618e28b8af352e02ab4233fb54eb0168460a40dc320bab0034b36ab59aaad668
+  languageName: node
+  linkType: hard
+
 "brace-expansion@npm:^2.0.1":
   version: 2.0.1
   resolution: "brace-expansion@npm:2.0.1"
@@ -3102,7 +3136,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:^4.1.0":
+"chalk@npm:^4.0.2, chalk@npm:^4.1.0":
   version: 4.1.2
   resolution: "chalk@npm:4.1.2"
   dependencies:
@@ -3269,6 +3303,13 @@ __metadata:
   version: 2.20.3
   resolution: "commander@npm:2.20.3"
   checksum: 10c0/74c781a5248c2402a0a3e966a0a2bba3c054aad144f5c023364be83265e796b20565aa9feff624132ff629aa64e16999fa40a743c10c12f7c61e96a794b99288
+  languageName: node
+  linkType: hard
+
+"concat-map@npm:0.0.1":
+  version: 0.0.1
+  resolution: "concat-map@npm:0.0.1"
+  checksum: 10c0/c996b1cfdf95b6c90fee4dae37e332c8b6eb7d106430c17d538034c0ad9a1630cb194d2ab37293b1bdd4d779494beee7786d586a50bd9376fd6f7bcc2bd4c98f
   languageName: node
   linkType: hard
 
@@ -3603,6 +3644,17 @@ __metadata:
   version: 1.1.1
   resolution: "ee-first@npm:1.1.1"
   checksum: 10c0/b5bb125ee93161bc16bfe6e56c6b04de5ad2aa44234d8f644813cc95d861a6910903132b05093706de2b706599367c4130eb6d170f6b46895686b95f87d017b7
+  languageName: node
+  linkType: hard
+
+"ejs@npm:^3.1.9":
+  version: 3.1.10
+  resolution: "ejs@npm:3.1.10"
+  dependencies:
+    jake: "npm:^10.8.5"
+  bin:
+    ejs: bin/cli.js
+  checksum: 10c0/52eade9e68416ed04f7f92c492183340582a36482836b11eab97b159fcdcfdedc62233a1bf0bf5e5e1851c501f2dca0e2e9afd111db2599e4e7f53ee29429ae1
   languageName: node
   linkType: hard
 
@@ -4058,6 +4110,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"filelist@npm:^1.0.4":
+  version: 1.0.4
+  resolution: "filelist@npm:1.0.4"
+  dependencies:
+    minimatch: "npm:^5.0.1"
+  checksum: 10c0/426b1de3944a3d153b053f1c0ebfd02dccd0308a4f9e832ad220707a6d1f1b3c9784d6cadf6b2f68f09a57565f63ebc7bcdc913ccf8012d834f472c46e596f41
+  languageName: node
+  linkType: hard
+
 "fill-range@npm:^7.1.1":
   version: 7.1.1
   resolution: "fill-range@npm:7.1.1"
@@ -4155,12 +4216,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fsevents@npm:2.3.2":
+  version: 2.3.2
+  resolution: "fsevents@npm:2.3.2"
+  dependencies:
+    node-gyp: "npm:latest"
+  checksum: 10c0/be78a3efa3e181cda3cf7a4637cb527bcebb0bd0ea0440105a3bb45b86f9245b307dc10a2507e8f4498a7d4ec349d1910f4d73e4d4495b16103106e07eee735b
+  conditions: os=darwin
+  languageName: node
+  linkType: hard
+
 "fsevents@npm:~2.3.2, fsevents@npm:~2.3.3":
   version: 2.3.3
   resolution: "fsevents@npm:2.3.3"
   dependencies:
     node-gyp: "npm:latest"
   checksum: 10c0/a1f0c44595123ed717febbc478aa952e47adfc28e2092be66b8ab1635147254ca6cfe1df792a8997f22716d4cbafc73309899ff7bfac2ac3ad8cf2e4ecc3ec60
+  conditions: os=darwin
+  languageName: node
+  linkType: hard
+
+"fsevents@patch:fsevents@npm%3A2.3.2#optional!builtin<compat/fsevents>":
+  version: 2.3.2
+  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#optional!builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"
+  dependencies:
+    node-gyp: "npm:latest"
   conditions: os=darwin
   languageName: node
   linkType: hard
@@ -4669,6 +4749,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"jake@npm:^10.8.5":
+  version: 10.9.2
+  resolution: "jake@npm:10.9.2"
+  dependencies:
+    async: "npm:^3.2.3"
+    chalk: "npm:^4.0.2"
+    filelist: "npm:^1.0.4"
+    minimatch: "npm:^3.1.2"
+  bin:
+    jake: bin/cli.js
+  checksum: 10c0/c4597b5ed9b6a908252feab296485a4f87cba9e26d6c20e0ca144fb69e0c40203d34a2efddb33b3d297b8bd59605e6c1f44f6221ca1e10e69175ecbf3ff5fe31
+  languageName: node
+  linkType: hard
+
 "jiti@npm:^1.21.0":
   version: 1.21.6
   resolution: "jiti@npm:1.21.6"
@@ -4870,6 +4964,18 @@ __metadata:
     "@koishijs/plugin-console": ^5.18.2
     koishi: ^4.16.7
   checksum: 10c0/a8b19ff404591456d1b9b4792fdb6fea73591161364b01b95faafd4c97ed3e8275aa90b4ba668eb81a08ec19b34e473c4b264222056849ecc043928d96789ab0
+  languageName: node
+  linkType: hard
+
+"koishi-plugin-html-renderer@npm:1.0.0":
+  version: 1.0.0
+  resolution: "koishi-plugin-html-renderer@npm:1.0.0"
+  dependencies:
+    ejs: "npm:^3.1.9"
+    playwright: "npm:^1.40.1"
+  peerDependencies:
+    koishi: ^4.17.9
+  checksum: 10c0/3d5373ac226cea587521e15c277f97565c321888aa2f741c5baab3f4ea44cb12d2d702745551006fdb95fb335b415b594ca6a497030253874b1c5996808521ab
   languageName: node
   linkType: hard
 
@@ -5157,6 +5263,24 @@ __metadata:
   peerDependencies:
     cordis: ^3.17.3
   checksum: 10c0/74f4399aaef99c1e186254d58ba0dd0851c2e46e268190be07fbe8f8f6631b7ff71a8234d13f032aec542eb693c6d97f9e1908d95f8b837b8308d815d064f808
+  languageName: node
+  linkType: hard
+
+"minimatch@npm:^3.1.2":
+  version: 3.1.2
+  resolution: "minimatch@npm:3.1.2"
+  dependencies:
+    brace-expansion: "npm:^1.1.7"
+  checksum: 10c0/0262810a8fc2e72cca45d6fd86bd349eee435eb95ac6aa45c9ea2180e7ee875ef44c32b55b5973ceabe95ea12682f6e3725cbb63d7a2d1da3ae1163c8b210311
+  languageName: node
+  linkType: hard
+
+"minimatch@npm:^5.0.1":
+  version: 5.1.6
+  resolution: "minimatch@npm:5.1.6"
+  dependencies:
+    brace-expansion: "npm:^2.0.1"
+  checksum: 10c0/3defdfd230914f22a8da203747c42ee3c405c39d4d37ffda284dac5e45b7e1f6c49aa8be606509002898e73091ff2a3bbfc59c2c6c71d4660609f63aa92f98e3
   languageName: node
   linkType: hard
 
@@ -5664,6 +5788,30 @@ __metadata:
     mlly: "npm:^1.7.1"
     pathe: "npm:^1.1.2"
   checksum: 10c0/4cd2c9442dd5e4ae0c61cbd8fdaa92a273939749b081f78150ce9a3f4e625cca0375607386f49f103f0720b239d02369bf181c3ea6c80cf1028a633df03706ad
+  languageName: node
+  linkType: hard
+
+"playwright-core@npm:1.45.3":
+  version: 1.45.3
+  resolution: "playwright-core@npm:1.45.3"
+  bin:
+    playwright-core: cli.js
+  checksum: 10c0/39cc5920b27c42300e13a0646ca723578085d85940fc1f03e858fa348b5ac06f2eadf34cf15a0c0f4443e63ae188097d3ddbeb4389e7bbf5ae3438d8f6ed23e1
+  languageName: node
+  linkType: hard
+
+"playwright@npm:^1.40.1":
+  version: 1.45.3
+  resolution: "playwright@npm:1.45.3"
+  dependencies:
+    fsevents: "npm:2.3.2"
+    playwright-core: "npm:1.45.3"
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  bin:
+    playwright: cli.js
+  checksum: 10c0/3516ca49deb589171ac6525c0367f2ff948514d791d197f3cc0a135154c2df08a4d7cd11a810e187f35ae9ca490b37ca3a92fb3eb51560f03aefcaca0613efdb
   languageName: node
   linkType: hard
 

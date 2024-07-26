@@ -16,3 +16,7 @@
   name: '@koishijs/client/lib'
 - id: au3o63
   name: yakumo/publish
+- id: uwwqva
+  name: yakumo/version
+- id: f3h00j
+  name: yakumo/prepare
